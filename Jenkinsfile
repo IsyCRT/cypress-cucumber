@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     parameters {
-        string(name: 'SPEC', defaultValue: '', description: 'Cypress/e2e/**/**')
+        string(name: 'SCRIPTS', defaultValue: 'cypress/e2e/**/**', description: 'ejecutar todos los test')
         choice(name: 'BROWSER', choices: ['chrome', 'edge'], description: 'Browser to run tests in')
     }
     options {
@@ -24,7 +24,7 @@ pipeline {
         stage('Run Cypress Tests') {
             steps {
                 // Run Cypress tests
-                sh 'npx cypress run --browser $BROWSER --spec $SPEC'
+                sh 'npx cypress run --browser $BROWSER --spec $SCRIPTS'
             }
         }
     }
