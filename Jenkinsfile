@@ -1,9 +1,9 @@
 pipeline {
     agent any 
-    parameters {
-        string(name: 'SPEC', defaultValue: 'cypress/e2e/**/**', description: 'ejecutar test')
-        choice(name: 'BROWSER', choices: ['chrome', 'edge'], description: 'Browser to run tests in')
-    }
+   // parameters {
+    //    string(name: 'SPEC', defaultValue: 'cypress/e2e/**/**', description: 'ejecutar test')
+    //    choice(name: 'BROWSER', choices: ['chrome', 'edge'], description: 'Browser to run tests in')
+    //}
     options {
         ansiColor('xterm')
     }
@@ -24,7 +24,7 @@ pipeline {
         stage('Run Cypress Tests') {
             steps {
                 // Run Cypress tests
-                bat 'npx cypress run --browser ${BROWSER} --spec ${SPEC}'
+                bat 'npx cypress run --browser chrome --spec cypress/e2e/tests/LoginRequest.cy.js'
             }
         }
     }
