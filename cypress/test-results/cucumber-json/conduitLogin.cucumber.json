@@ -22,7 +22,7 @@
             "name": "User is on the login page",
             "result": {
               "status": "passed",
-              "duration": 3445000000
+              "duration": 3353000000
             }
           },
           {
@@ -49,7 +49,7 @@
             "name": "User login with valid credentials conduit",
             "result": {
               "status": "passed",
-              "duration": 957000000
+              "duration": 917000000
             }
           },
           {
@@ -59,7 +59,7 @@
             "name": "User click on the settings button",
             "result": {
               "status": "passed",
-              "duration": 744000000
+              "duration": 670000000
             }
           },
           {
@@ -69,7 +69,7 @@
             "name": "User click on the logout button",
             "result": {
               "status": "passed",
-              "duration": 107000000
+              "duration": 100000000
             }
           },
           {
@@ -79,7 +79,7 @@
             "name": "User should be routed back to login page",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 10000000
             }
           }
         ]
@@ -99,7 +99,7 @@
             "name": "User is on the login page",
             "result": {
               "status": "passed",
-              "duration": 448000000
+              "duration": 507000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "User login with valid credentials from fixture",
             "result": {
               "status": "passed",
-              "duration": 899000000
+              "duration": 883000000
             }
           },
           {
@@ -119,7 +119,7 @@
             "name": "User click on the settings button",
             "result": {
               "status": "passed",
-              "duration": 478000000
+              "duration": 443000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "User click on the logout button",
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 97000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "User should be routed back to login page",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 6000000
             }
           }
         ]

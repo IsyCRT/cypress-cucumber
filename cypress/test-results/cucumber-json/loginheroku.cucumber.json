@@ -22,7 +22,7 @@
             "name": "User login from main page",
             "result": {
               "status": "passed",
-              "duration": 1481000000
+              "duration": 1510000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "User login with valid credentials",
             "result": {
               "status": "passed",
-              "duration": 1266000000
+              "duration": 1184000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "The login has been successful",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 19000000
             }
           }
         ]

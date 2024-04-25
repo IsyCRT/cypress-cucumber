@@ -1,8 +1,8 @@
 pipeline {
     agent any 
     parameters {
-        string(name: 'SCRIPTS', defaultValue: 'cypress/e2e/**/**', description: 'ejecutar todos los test')
-        choice(name: 'BROWSER', choices: ['chrome', 'edge'], description: 'Browser to run tests in')
+        string(name: 'SCRIPTS', defaultValue: ['execute:script', 'test'], description: 'ejecutar test')
+       // choice(name: 'BROWSER', choices: ['chrome', 'edge'], description: 'Browser to run tests in')
     }
     options {
         ansiColor('xterm')
@@ -24,7 +24,7 @@ pipeline {
         stage('Run Cypress Tests') {
             steps {
                 // Run Cypress tests
-                sh 'npx cypress run --browser $BROWSER --spec $SCRIPTS'
+                sh 'npm run $SCRIPTS'
             }
         }
     }
