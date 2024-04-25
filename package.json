@@ -1,0 +1,27 @@
+{ 
+  "env": {
+    "NO_PROXY": "localhost,  pongo todos los que hay que ignorar"
+  },
+  "devDependencies": {
+    "cypress": "^13.5.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^3.6.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepdefinitions": false,
+    "step_definitions":"cypress/e2e/cucumber/stepDefinitions/*",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/test-results/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "scripts": {
+    "execute:script": "cypress run",
+    "pretest": "node ./cypress/reporting/delete-results.js",
+    "posttest": "node ./cypress/reporting/report.js",
+    "test": "npm run execute:script || npm run posttest" 
+  },
+  "//": "Provocar un error y ejecutar en consola npm run test, y la url que se genera es un html report"
+}

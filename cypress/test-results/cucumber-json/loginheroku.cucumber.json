@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "line": 1,
+    "id": "login-functionality",
+    "tags": [],
+    "uri": "loginheroku.feature",
+    "elements": [
+      {
+        "id": "login-functionality;login-with-valid-credentials-using-data-fixture",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login with valid credentials using data fixture",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User login from main page",
+            "result": {
+              "status": "passed",
+              "duration": 1481000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User login with valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 1266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "The login has been successful",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Conduit Login Functionality",
+    "line": 1,
+    "id": "conduit-login-functionality",
+    "tags": [],
+    "uri": "conduitLogin.feature",
+    "elements": [
+      {
+        "id": "conduit-login-functionality;login-and-logout-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login and Logout with Valid Credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 3445000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "cypressdemo@gmail.com",
+                      "cypressdemo"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User login with valid credentials conduit",
+            "result": {
+              "status": "passed",
+              "duration": 957000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User click on the settings button",
+            "result": {
+              "status": "passed",
+              "duration": 744000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User click on the logout button",
+            "result": {
+              "status": "passed",
+              "duration": 107000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User should be routed back to login page",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "conduit-login-functionality;login-and-logout-with-valid-credentials-with-fixture",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Login and Logout with Valid Credentials with Fixture",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "User is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 448000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User login with valid credentials from fixture",
+            "result": {
+              "status": "passed",
+              "duration": 899000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User click on the settings button",
+            "result": {
+              "status": "passed",
+              "duration": 478000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User click on the logout button",
+            "result": {
+              "status": "passed",
+              "duration": 96000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "User should be routed back to login page",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
